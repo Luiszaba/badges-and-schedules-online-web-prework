@@ -18,6 +18,7 @@ end
 #this method will create muliple badges using .map; one badge per attendee.
 
 def assign_rooms(attendees)
+  i=0
   attendees.each_with_index.map do |attendees, i|
     "Hello, #{attendees}! You'll be assigned to room #{i+1}!"
   end
